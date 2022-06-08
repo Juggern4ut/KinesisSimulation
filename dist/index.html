@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinesis simulation</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Kinesis simulation</h1>
+
+      <article>
+        <h2>What is kinesis?</h2>
+        <p>
+          Many insects and microorganisms do not have the luxury of having a
+          sensory system that informs them of a incoming thread. Instead they
+          have to resort to a method called 'kinesis' which, for example, is
+          found in wood lice.
+        </p>
+
+        <p>
+          Simply put, an organism using kinesis will slow down and move less
+          when everything is in order and slightly speed up if any problems
+          arise.
+        </p>
+      </article>
+
+      <article>
+        <h2>What do we see here?</h2>
+        <p>
+          This is my attempt to simulate lots of organisms that move based only
+          on the simple rules given by kinesis.
+        </p>
+
+        <p>
+          In the middle of the given area, 2000 organisms will be placed. They
+          will move randomly around the given space. All they can sense is their
+          own satisfaction which will slowly increase on the right side of the
+          field and decrease on the left side.
+        </p>
+
+        <p>
+          Based on the concept of kinesis, after only a short while, there
+          should be a major amount of all organisms on the good side.
+        </p>
+      </article>
+    </section>
+    <div class="stats">
+      <div>
+        <span>Bad: </span>
+        <span id="bad">0</span>
+      </div>
+
+      <span id="total">0</span>
+
+      <div>
+        <span>Good: </span>
+        <span id="good">0</span>
+      </div>
+    </div>
+    <canvas id="canvas" width="1920" height="720"></canvas>
+    <div class="bg"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>
